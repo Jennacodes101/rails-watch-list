@@ -1,0 +1,15 @@
+<h1> <%= @list.name %> </h1>
+<% if @list.nil?%>
+  <h3> <%= 'This list is empty ' %>
+<% end %>
+<% @list.movies.each do |movie| %>
+  <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+  <div class="container">
+    <h3> <%= movie.title %> <%= movie.rating %>  </h3>
+    <p> <%= movie.overview %> </p>
+    <p> <strong> <%= bookmark.comment %> </strong>
+    <%= link_to "delete", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %> </p>
+  </div>
+<%end %>
+<hr>
+<%= link_to 'back', lists_path %>

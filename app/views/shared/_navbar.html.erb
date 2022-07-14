@@ -1,0 +1,9 @@
+<nav class="navbar fixed-top bg justify-content-between" style="background-color: #e3f2fd;" role="navigation">
+    <div class="ms-3">
+      <%= link_to "", root_path, class: "fa-solid fa-clapperboard fa-xl icon" %>
+    </div>
+    <div class="me-4">
+      <button class="btn btn-sm btn-outline-secondary " type="button"> <%= link_to 'create new list', new_list_path %> </button>
+      <button class="btn btn-sm btn-outline-secondary" type="button"> <%= link_to 'create new bookmark', new_bookmark_path %> </button>
+    </div>
+</nav>

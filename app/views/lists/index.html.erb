@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col-12 header">
+      <h1> Create. Share. Explore.  </h1>
+      <img src="app/assets/images/.jpg" alt="">>
+    </div>
+  </div>
+  <% @lists.each do |list| %>
+    <%= link_to list.name, list_path(list.id) %>
+  <%end%>
+  <hr>
+  <%= link_to '+ Create new list', new_list_path %>
+  <%= link_to '+ Create new bookmark', new_bookmark_path %>
+<div>

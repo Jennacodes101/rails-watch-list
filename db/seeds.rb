@@ -35,7 +35,9 @@ page_num = 1
   end
   page_num += 1
 end
-
+puts "seeding lists...."
+List.create(name: 'Drama')
+List.create(name: 'sci-fi')
 puts 'database seeding is complete✅'
 
 # https://developers.themoviedb.org/3/movies/get-top-rated-movies
