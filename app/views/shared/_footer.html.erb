@@ -1,0 +1,33 @@
+<div class=" footer sticky-bottom bg-dark bg-gradient mt-5 py-3 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <ul>
+          <li> <h1 class="white"> Watchlist </h1> </li>
+          <li> <p class="white"> Discover movie watchlists. Share your own </p> </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <ul>
+          <li> <%= link_to "Home", lists_path, class:"footer-links" %></li>
+          <li> <a href="#top_links" class="footer-links">Top links </a></li>
+          <li><a href="#all_lists" class="footer-links">All lists </a></li>
+          <li> <%= link_to "Create a list", new_list_path, class:"footer-links" %></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <ul>
+          <%= link_to "Your profile", profile_path(current_user.id), class: "footer-links" %>
+          <li> <a href="#" class="footer-links">Your profile</a></li>
+          <li><a href="#" class="footer-links">Logout </a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <ul>
+          <li> <a href="#" class="footer-links">About the site</a></li>
+          <li><a href="#" class="footer-links">About the creator</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

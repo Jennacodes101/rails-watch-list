@@ -1,0 +1,20 @@
+
+
+.footer-links {
+  color: $white;
+  font-weight: bold;
+  & :hover {
+    color: $light-gray;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.white {
+  color: $white;
+}
+

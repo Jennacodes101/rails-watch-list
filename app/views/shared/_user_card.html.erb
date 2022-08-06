@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="user-info">
+    <%= link_to "update", edit_user_registration_path(current_user.id),
+    class: "btn btn-sm btn-outline-primary" %>
+    <div class= "d-flex">
+      <p class="me-1"> Hello, </p>
+      <strong><%= current_user.username %></strong>
+    </div>
+      <div class="user_bio"></div>
+  </div>
+</div>

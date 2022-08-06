@@ -1,6 +1,28 @@
 // Import page-specific CSS files here.
 @import "home";
 
-.header {
-  background-image: url('/app/assets/images/ajeet-mestry-UBhpOIHnazM-unsplash.jpg');
+.header{
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  h1 {
+    color: white;
+
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: inherit;
+  color: inherit
+}
+
+.card:hover {
+  
 }

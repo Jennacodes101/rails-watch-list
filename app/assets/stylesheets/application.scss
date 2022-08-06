@@ -11,6 +11,7 @@
 @import "components/index";
 @import "pages/index";
 @import "pages/";
+@import "pages/footer";
 
 
 a {
@@ -20,4 +21,20 @@ a {
 a:hover {
   text-decoration: inherit;
   color: inherit
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 200px;    /* Footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;            /* Footer height */
 }

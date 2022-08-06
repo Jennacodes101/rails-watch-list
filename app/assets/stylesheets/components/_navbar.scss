@@ -7,4 +7,24 @@
 .navbar-btn {
   text-decoration: none;
   color: white;
+
+}
+
+.brand-name {
+  font-weight: bolder;
+  &:hover{
+    color: $gray;
+  }
+}
+
+.login-btn {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: solid 1px white ;
+  color: white;
+  &:hover {
+    color: #37393B;
+    background-color: $white;
+    transition-duration: 250ms;
+  }
 }
